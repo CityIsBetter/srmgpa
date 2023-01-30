@@ -12,7 +12,7 @@ grade_points = {
 };
 
 
-var count = 11;
+var count = 7;
 $("#go").on("click",calculate);
 $("#reset").on("click", function(){
     $("#go").removeClass("hidden");
@@ -41,11 +41,9 @@ function calculate(event)
             points+=credit*gradept;
         }
     var gpa = (points/sum_credits);
-    var percent = (gpa*10).toFixed(0);
     $("#result").removeClass("hidden");
     $("#more").addClass("hidden");
     $("#gpa").text(gpa.toFixed(2));
-    $(".progress-bar").css({"width": percent+"%"});
     $("#reset").removeClass("hidden");
     $("#go").addClass("hidden");
     window.scrollTo(0,0);
