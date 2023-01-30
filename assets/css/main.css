@@ -143,6 +143,9 @@ table th{
         margin: 0;
         padding: 0;
     }
+    table th{
+        font-size: 20px;
+    }
     .container{
         display: flex;
         flex-direction: column;
