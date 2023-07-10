@@ -5,5 +5,5 @@ This is an unofficial remake of optimusam's srmgpa project, I just changed the U
 
 # ScreenShots
 
-![screenshots](ss1.png)
 ![screenshots](ss2.png)
+![screenshots](ss1.png)
