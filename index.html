@@ -22,60 +22,57 @@
 <body>
     <div class="container-fluid">
         <div class="title">
-        <h1 class="style"><image src="assets/logo.png" class="logo"></image> SRM University<small class="text-muted">GPA Calculator</small></h1>
-    </div>
-        <div class="hidden" id="result">
-                <h2 id="result" class="text-center style">You have scored Grade Point Average of <strong><span id="gpa"></span></strong></h2>
+            <image src="assets/logo.png" class="logo"></image>
+            <h1 class="style">SRM University <small class="text-muted">GPA Calculator</small></h1>
         </div>
 
-            <div class="container">
-                <form class="form-inline" action="#">
-                    <input type="reset" id="reset" class="hidden btn-r">
-                <table class="table">
-                    <tr>
-                        <th>No.</th>
-                        <th>Credits</th>
-                        <th>Grade Achieved</th>
-                    </tr>
+        <div class="container">
+            <form class="form-inline" action="#">
+            <table class="table">
+                <tr>
+                    <th>No.</th>
+                    <th>Credits</th>
+                    <th>Grade Achieved</th>
+                </tr>
                     <!-- Row 1 -->
-                    <tr>
-                        <td><label for="cr1">1.</label></td>
-                        <td><input type="number" class="cred form-control" id="cr1" min=1 pattern="\d*"></td>
-                        <td>
-                            <select class="opt form-control">
-                                <option>O</option>
-                                <option>A+</option>
-                                <option>A</option>
-                                <option>B+</option>
-                                <option>B</option>
-                                <option>C</option>
-                                <option>P</option>
-                                <option>F</option>
-                                <option>Ab</option>
-                                <option>I</option>
-                            </select>
-                        </td>
-                    </tr>
+                <tr>
+                    <td><label for="cr1">1.</label></td>
+                    <td><input type="number" class="cred form-control" id="cr1" min=1 pattern="\d*"></td>
+                    <td>
+                        <select class="opt form-control">
+                            <option>O</option>
+                            <option>A+</option>
+                            <option>A</option>
+                            <option>B+</option>
+                            <option>B</option>
+                            <option>C</option>
+                            <option>P</option>
+                            <option>F</option>
+                            <option>Ab</option>
+                            <option>I</option>
+                        </select>
+                    </td>
+                </tr>
                     
                     <!-- Row 2 -->
-                    <tr>
-                        <td><label for="cr2">2.</label></td>
-                        <td><input type="number" class="cred form-control" id="cr2" min=1 pattern="\d*"></td>
-                        <td>
-                            <select class="opt form-control">
-                                <option>O</option>
-                                <option>A+</option>
-                                <option>A</option>
-                                <option>B+</option>
-                                <option>B</option>
-                                <option>C</option>
-                                <option>P</option>
-                                <option>F</option>
-                                <option>Ab</option>
-                                <option>I</option>
-                            </select>
-                        </td>
-                    </tr>
+                <tr>
+                    <td><label for="cr2">2.</label></td>
+                    <td><input type="number" class="cred form-control" id="cr2" min=1 pattern="\d*"></td>
+                    <td>
+                        <select class="opt form-control">
+                            <option>O</option>
+                            <option>A+</option>
+                            <option>A</option>
+                            <option>B+</option>
+                            <option>B</option>
+                            <option>C</option>
+                            <option>P</option>
+                            <option>F</option>
+                            <option>Ab</option>
+                            <option>I</option>
+                        </select>
+                    </td>
+                </tr>
                     
                     <!-- Option 3 -->
                     <tr>
@@ -180,7 +177,16 @@
                 </table>
         </form>
         <button class="btn btn-ac" id="more">Add course</button>
-        <input type="button" value="Submit" class="btn btn-s" id="go">      
+        <button class="button type1" id="go">
+            <span class="btn-txt">Submit</span>
+        </button>      
+    </div>
+    <div class="hidden" id="result">
+        <h2 id="results" class="text-center style">You have scored Grade Point Average of <strong><span id="gpa"></span></strong></h2>
+        <input type="reset" id="reset" class="hidden btn-r">
+    </div>
+    <div class="footer">
+        Designed By <a href="https://github.com/CityIsBetter/" target="_blank">Mahesh Paul J</a>
     </div>
     <script type="text/javascript" src="assets/js/jquery.min.js"></script>
     <script type="text/javascript" src="assets/js/main.js"></script>

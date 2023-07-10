@@ -1,53 +1,56 @@
 .hidden {
     display: none;
 }
-*{
-    color: black;
-    overflow: hidden;
-}
 .logo{
     width: 70px;
     height: 70px;
     margin: 0;
 }
 
-body{
-      width: 100%;
-      background: #F96167;
+html{
+    margin: 0;
+    padding: 0;
+    background: url(/assets/background.png) no-repeat center center fixed;
+    background-size: cover;
 }
 .container-fluid {
     display: flex;
     flex-direction: column;
-    flex: 1;
     align-items: center;
     justify-content: center;
 }
+
 table{
     display: flex;
     flex-direction: column;
-    flex: 2;
     align-items: center;
     justify-content: center;
     padding: 20px;
 }
 .container{
     width: auto;
-    background-color: #f7cac9;
+    margin-bottom: 20px;
+    background-color:rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
     border-radius: 15px;
     padding: 20px;
-
+    box-shadow: 0 0 20px black;
 }
 .title{
-    background: #f7cac9;
+    background-color:rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
     border-radius: 15px;
-    margin-bottom: 20px;
+    margin: 20px;
     width: auto;
-    padding:0 40px 0 40px;
-    box-shadow: 5px 10px #00000048;
+    padding:20px 40px;
+    box-shadow: 0 0 20px black;
+    display: flex;
+    flex-direction: row;
 }
 .container-fluid h1{
+    margin-left: 10px;
     text-decoration: underline;
-    color: #034f84;
+    color: #2743e4;
 }
 .container-fluid h2{
     color: white;
@@ -58,18 +61,23 @@ table input{
     height: 10px;
     padding: 20px;
     margin: 5px;
-    border-radius: 15px;
+    border-radius: 25px;
     border: none;
+    outline: none;
+    font-size: 24px;
 }
 table select{
-    padding: 20px;
+    padding: 10px;
     margin-left: 40px;
     border-radius: 15px;
     border: none;
+    outline: none;
+    font-size: 24px;
 }
 table th{
     font-size: 30px;
     font-weight: 700;
+    color: #FFFEF7;
 }
 .btn{
     margin-bottom: 20px;
@@ -106,6 +114,7 @@ table th{
     font-weight: 600;
     font-size: 16px;
     margin-left: 70%;
+    margin-bottom: 20px;
     width: 200px;
     background-color: #c94c4c;
     padding: 15px 20px;
@@ -120,10 +129,26 @@ table th{
     color: #ffef96;
 }
 
+.text-muted{
+    color: #FFFEF7;
+}
+
+label{
+    color: #FFFEF7;
+}
+
 .container-fluid hr{	
     margin-right: 20%;	
     border-color: violet;
-    }
+}
+
+#result{
+    width: 100vh;
+    padding: 20px;
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 20px black;
+}
 
 @media (max-width: 1024px){
 
@@ -134,14 +159,30 @@ table th{
 
 @media(max-width: 700px) 
 {
+    .logo{
+        margin: 10px 0 0 10px;
+        width: 40px;
+        height: 40px;
+    }
+    .container-fluid{
+        margin-top: 10%;
+    }
     .container-fluid h1{
         font-size: 24px;
-        margin-left: 50px;
     }
     table {
         width: 100%;
         margin: 0;
         padding: 0;
+    }
+    table input{
+        width: 80%;
+        height: 10px;
+        padding: 10px;
+    }
+    table select{
+        font-size: 20px;
+        padding: 5px;
     }
     table th{
         font-size: 20px;
@@ -153,23 +194,13 @@ table th{
         align-items: center;
         width: 95%;
         margin: auto;
+        margin-top: 10%;
         padding: 0;
     }
     .title{
         padding: 0px;
         width: 100%;
-    }
-    .container-fluid h1{
-        margin-left: 0;
-    }
-    table input{
-        width: 60%;
-    }
-    table select{
-        width: auto;
-    }
-    .btn-s{
-        margin-left: 50%;
+        margin: 10px 10px;
     }
     .btn-r{
         width: auto;
@@ -177,3 +208,73 @@ table th{
     }
 
 }
+
+
+.button {
+    height: 50px;
+    width: 200px;
+    position: relative;
+    background-color: transparent;
+    cursor: pointer;
+    border: 2px solid #eee;
+    overflow: hidden;
+    border-radius: 30px;
+    color: #eee;
+    transition: all 0.5s ease-in-out;
+    margin-left: 70%;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 700px) {
+    .button{
+        height: 40px;
+        width: 150px;
+        margin-left: 50%;
+    }
+}  
+  .btn-txt {
+    z-index: 1;
+    font-weight: 800;
+    letter-spacing: 4px;
+  }
+  
+  .type1::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all 0.5s ease-in-out;
+    background-color: #eee;
+    border-radius: 30px;
+    visibility: hidden;
+    height: 10px;
+    width: 10px;
+    z-index: -1;
+  }
+  
+  .button:hover {
+    box-shadow: 1px 1px 200px #252525;
+    color: #333;
+    border: none;
+  }
+  
+  .type1:hover::after {
+    visibility: visible;
+    transform: scale(100) translateX(2px);
+  }
+
+  .footer{
+    color: #FFFEF7;
+    font-size: 17px;
+    font-weight: 200;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px black;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .footer a{
+    text-decoration: none;
+    font-weight: 800;
+    color: #ffef96;
+  }
