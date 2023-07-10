@@ -1,4 +1,9 @@
-# srmgpa
-Calculates SRM UNIVERSITY SEMESTER GRADE POINT AVERAGE
+# Srmgpa
+This Website Calculates SRM UNIVERSITY SEMESTER GRADE POINT AVERAGE.
 
-this is a unofficial remake of optimusam's srmgpa project, i just changed the ui
+This is an unofficial remake of optimusam's srmgpa project, I just changed the UI.
+
+# ScreenShots
+
+![screenshots](ss1.png)
+![screenshots](ss2.png)
