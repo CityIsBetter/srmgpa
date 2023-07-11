@@ -30,14 +30,14 @@ table{
 .container{
     width: auto;
     margin-bottom: 20px;
-    background-color:rgba(0, 0, 0, 0.2);
+    background-color:rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(5px);
     border-radius: 15px;
     padding: 20px;
     box-shadow: 0 0 20px black;
 }
 .title{
-    background-color:rgba(0, 0, 0, 0.2);
+    background-color:rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(5px);
     border-radius: 15px;
     margin: 20px;
@@ -50,6 +50,7 @@ table{
 .container-fluid h1{
     margin-left: 10px;
     text-decoration: underline;
+    text-shadow: -1px -1px 0 #000000a1, 1px -1px 0 #000000a1, -1px 1px 0 #000000a1, 1px 1px 0 #000000a1;
     color: #2743e4;
 }
 .container-fluid h2{
@@ -65,6 +66,7 @@ table input{
     border: none;
     outline: none;
     font-size: 24px;
+    background-color: rgba(222, 222, 222, 0.5);
 }
 table select{
     padding: 10px;
@@ -73,6 +75,7 @@ table select{
     border: none;
     outline: none;
     font-size: 24px;
+    background-color: rgba(222, 222, 222, 0.5);
 }
 table th{
     font-size: 30px;
@@ -143,9 +146,12 @@ label{
 }
 
 #result{
-    width: 100vh;
+    margin: 10px;
+    width: 100vw;
+    max-width: 700px;
     padding: 20px;
     border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(5px);
     box-shadow: 0 0 20px black;
 }
